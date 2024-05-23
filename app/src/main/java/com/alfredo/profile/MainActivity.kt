@@ -20,6 +20,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.input.pointer.PointerIcon
 import androidx.compose.ui.input.pointer.PointerIcon.Companion.Text
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
@@ -131,9 +132,29 @@ class MainActivity : AppCompatActivity() {
                 Column(modifier = Modifier.fillMaxHeight(),
                     verticalArrangement = Arrangement.Center) {
                     Image(painter = painterResource(id = R.drawable.btn_1),
-                        null, modifier = Modifier.padding(end = 5.dp)
-                        .clickable{} )
+                        null, modifier = Modifier
+                            .padding(end = 5.dp)
+                            .clickable {} )
             }
+              Column(modifier = Modifier
+                  .padding(start = 16.dp)
+                  .weight(1f)) {
+                Text(text = "notificación",
+                    color = Color.Black,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.SemiBold
+                )
+              }
+              Column(
+                  modifier = Modifier.fillMaxHeight(),
+                  verticalArrangement = Arrangement.Center
+              ) {
+                Image(
+                    painter = painterResource(id = R.drawable.arrow),
+                    null,
+                    Modifier.padding(end = 5.dp))
+
+              }
           }
 
       }
