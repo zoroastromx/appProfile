@@ -6,10 +6,14 @@ import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Text
 
 import androidx.compose.runtime.Composable
@@ -19,6 +23,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.PointerIcon.Companion.Text
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.KeyboardType.Companion.Text
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -77,7 +83,7 @@ class MainActivity : AppCompatActivity() {
                       bottom.linkTo(topImg.bottom)
                   })
 
-              Text(text = "Profile",
+              Text(text = "Perfil",
                   style = TextStyle(
                       color = Color.White,
                       fontSize = 30.sp
@@ -90,6 +96,44 @@ class MainActivity : AppCompatActivity() {
                       }
 
               )
+              Image(painterResource(id = R.drawable.back), null, Modifier
+                  .constrainAs(back) {
+                      top.linkTo(parent.top, margin = 24.dp)
+                      start.linkTo(parent.start, margin = 24.dp)
+
+                  })
+
+              Image(painterResource(id = R.drawable.write), null, Modifier
+                  .constrainAs(pen) {
+                      top.linkTo(profile.top)
+                      start.linkTo(profile.end)
+
+                  })
+          }
+          Text(text = "Alfredo García-Marín", fontSize = 26.sp, fontWeight = FontWeight.Bold,
+              modifier = Modifier.padding(top = 16.dp),
+              color = Color(android.graphics.Color.parseColor("#32357a"))
+          )
+
+          Text(text = "alfredo.marin@gmail.com",
+              fontSize = 18.sp,
+              color = Color(android.graphics.Color.parseColor("#747679"))
+          )
+          Row(
+              modifier = Modifier
+                  .fillMaxWidth()
+                  .padding(start = 32.dp, end = 32.dp, top = 32.dp, bottom = 10.dp)
+                  .height(55.dp),
+              verticalAlignment = Alignment.CenterVertically
+
+
+          ){
+                Column(modifier = Modifier.fillMaxHeight(),
+                    verticalArrangement = Arrangement.Center) {
+                    Image(painter = painterResource(id = R.drawable.btn_1),
+                        null, modifier = Modifier.padding(end = 5.dp)
+                        .clickable{} )
+            }
           }
 
       }
