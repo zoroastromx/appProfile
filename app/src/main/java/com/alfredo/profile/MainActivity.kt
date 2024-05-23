@@ -139,7 +139,7 @@ class MainActivity : AppCompatActivity() {
               Column(modifier = Modifier
                   .padding(start = 16.dp)
                   .weight(1f)) {
-                Text(text = "notificación",
+                Text(text = "Notificación",
                     color = Color.Black,
                     fontSize = 18.sp,
                     fontWeight = FontWeight.SemiBold
@@ -152,10 +152,193 @@ class MainActivity : AppCompatActivity() {
                 Image(
                     painter = painterResource(id = R.drawable.arrow),
                     null,
-                    Modifier.padding(end = 5.dp).clickable{})
+                    Modifier
+                        .padding(end = 5.dp)
+                        .clickable{})
 
               }
           }
+          Row(
+              modifier = Modifier
+                  .fillMaxWidth()
+                  .padding(start = 32.dp, end = 32.dp, top = 10.dp, bottom = 10.dp)
+                  .height(55.dp),
+              verticalAlignment = Alignment.CenterVertically
+
+
+          ){
+              Column(modifier = Modifier.fillMaxHeight(),
+                  verticalArrangement = Arrangement.Center) {
+                  Image(painter = painterResource(id = R.drawable.btn_2),
+                      null, modifier = Modifier
+                          .padding(end = 5.dp)
+                          .clickable {} )
+              }
+              Column(modifier = Modifier
+                  .padding(start = 16.dp)
+                  .weight(1f)) {
+                  Text(text = "Calendario",
+                      color = Color.Black,
+                      fontSize = 18.sp,
+                      fontWeight = FontWeight.SemiBold
+                  )
+              }
+              Column(
+                  modifier = Modifier.fillMaxHeight(),
+                  verticalArrangement = Arrangement.Center
+              ) {
+                  Image(
+                      painter = painterResource(id = R.drawable.arrow),
+                      null,
+                      Modifier
+                          .padding(end = 5.dp)
+                          .clickable{})
+
+              }
+          }
+          Row(
+              modifier = Modifier
+                  .fillMaxWidth()
+                  .padding(start = 32.dp, end = 32.dp, top = 10.dp, bottom = 10.dp)
+                  .height(55.dp),
+              verticalAlignment = Alignment.CenterVertically
+
+
+          ){
+              Column(modifier = Modifier.fillMaxHeight(),
+                  verticalArrangement = Arrangement.Center) {
+                  Image(painter = painterResource(id = R.drawable.btn_3),
+                      null, modifier = Modifier
+                          .padding(end = 5.dp)
+                          .clickable {} )
+              }
+              Column(modifier = Modifier
+                  .padding(start = 16.dp)
+                  .weight(1f)) {
+                  Text(text = "Galería",
+                      color = Color.Black,
+                      fontSize = 18.sp,
+                      fontWeight = FontWeight.SemiBold
+                  )
+              }
+              Column(
+                  modifier = Modifier.fillMaxHeight(),
+                  verticalArrangement = Arrangement.Center
+              ) {
+                  Image(
+                      painter = painterResource(id = R.drawable.arrow),
+                      null,
+                      Modifier
+                          .padding(end = 5.dp)
+                          .clickable{})
+
+              }
+          }
+          Row(
+              modifier = Modifier
+                  .fillMaxWidth()
+                  .padding(start = 32.dp, end = 32.dp, top = 10.dp, bottom = 10.dp)
+                  .height(55.dp),
+              verticalAlignment = Alignment.CenterVertically
+
+
+          ){
+              Column(modifier = Modifier.fillMaxHeight(),
+                  verticalArrangement = Arrangement.Center) {
+                  Image(painter = painterResource(id = R.drawable.btn_4),
+                      null, modifier = Modifier
+                          .padding(end = 5.dp)
+                          .clickable {} )
+              }
+              Column(modifier = Modifier
+                  .padding(start = 16.dp)
+                  .weight(1f)) {
+                  Text(text = "Mi play list",
+                      color = Color.Black,
+                      fontSize = 18.sp,
+                      fontWeight = FontWeight.SemiBold
+                  )
+              }
+              Column(
+                  modifier = Modifier.fillMaxHeight(),
+                  verticalArrangement = Arrangement.Center
+              ) {
+                  Image(
+                      painter = painterResource(id = R.drawable.arrow),
+                      null,
+                      Modifier
+                          .padding(end = 5.dp)
+                          .clickable{})
+
+              }
+          }
+          Row(
+              modifier = Modifier
+                  .fillMaxWidth()
+                  .padding(start = 32.dp, end = 32.dp, top = 10.dp, bottom = 10.dp)
+                  .height(55.dp),
+              verticalAlignment = Alignment.CenterVertically
+
+
+          ){
+              Column(modifier = Modifier.fillMaxHeight(),
+                  verticalArrangement = Arrangement.Center) {
+                  Image(painter = painterResource(id = R.drawable.btn_5),
+                      null, modifier = Modifier
+                          .padding(end = 5.dp)
+                          .clickable {} )
+              }
+              Column(modifier = Modifier
+                  .padding(start = 16.dp)
+                  .weight(1f)) {
+                  Text(text = "Compartir",
+                      color = Color.Black,
+                      fontSize = 18.sp,
+                      fontWeight = FontWeight.SemiBold
+                  )
+              }
+              Column(
+                  modifier = Modifier.fillMaxHeight(),
+                  verticalArrangement = Arrangement.Center
+              ) {
+                  Image(
+                      painter = painterResource(id = R.drawable.arrow),
+                      null,
+                      Modifier
+                          .padding(end = 5.dp)
+                          .clickable{})
+
+              }
+          }
+          Row(
+              modifier = Modifier
+                  .fillMaxWidth()
+                  .padding(start = 32.dp, end = 32.dp, top = 10.dp, bottom = 10.dp)
+                  .height(55.dp),
+              verticalAlignment = Alignment.CenterVertically
+
+
+          ){
+              Column(modifier = Modifier.fillMaxHeight(),
+                  verticalArrangement = Arrangement.Center) {
+                  Image(painter = painterResource(id = R.drawable.btn_6),
+                      null, modifier = Modifier
+                          .padding(end = 5.dp)
+                          .clickable {} )
+              }
+              Column(modifier = Modifier
+                  .padding(start = 16.dp)
+                  .weight(1f)) {
+                  Text(text = "Salir",
+                      color = Color.Black,
+                      fontSize = 18.sp,
+                      fontWeight = FontWeight.SemiBold
+                  )
+              }
+
+          }
+
+
 
       }
     }
