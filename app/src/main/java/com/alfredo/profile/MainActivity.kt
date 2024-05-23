@@ -23,6 +23,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.PointerIcon
 import androidx.compose.ui.input.pointer.PointerIcon.Companion.Text
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
@@ -116,7 +117,7 @@ class MainActivity : AppCompatActivity() {
               color = Color(android.graphics.Color.parseColor("#32357a"))
           )
 
-          Text(text = "alfredo.marin@gmail.com",
+          Text(text = "alfredo.marin@inegi.org.mx",
               fontSize = 18.sp,
               color = Color(android.graphics.Color.parseColor("#747679"))
           )
@@ -154,7 +155,7 @@ class MainActivity : AppCompatActivity() {
                     null,
                     Modifier
                         .padding(end = 5.dp)
-                        .clickable{})
+                        .clickable {})
 
               }
           }
@@ -192,7 +193,7 @@ class MainActivity : AppCompatActivity() {
                       null,
                       Modifier
                           .padding(end = 5.dp)
-                          .clickable{})
+                          .clickable {})
 
               }
           }
@@ -215,7 +216,7 @@ class MainActivity : AppCompatActivity() {
               Column(modifier = Modifier
                   .padding(start = 16.dp)
                   .weight(1f)) {
-                  Text(text = "Galería",
+                  Text(text = stringResource(R.string.galeria),
                       color = Color.Black,
                       fontSize = 18.sp,
                       fontWeight = FontWeight.SemiBold
@@ -230,7 +231,7 @@ class MainActivity : AppCompatActivity() {
                       null,
                       Modifier
                           .padding(end = 5.dp)
-                          .clickable{})
+                          .clickable {})
 
               }
           }
@@ -268,7 +269,7 @@ class MainActivity : AppCompatActivity() {
                       null,
                       Modifier
                           .padding(end = 5.dp)
-                          .clickable{})
+                          .clickable {})
 
               }
           }
@@ -306,7 +307,7 @@ class MainActivity : AppCompatActivity() {
                       null,
                       Modifier
                           .padding(end = 5.dp)
-                          .clickable{})
+                          .clickable {})
 
               }
           }
