@@ -152,7 +152,7 @@ class MainActivity : AppCompatActivity() {
                 Image(
                     painter = painterResource(id = R.drawable.arrow),
                     null,
-                    Modifier.padding(end = 5.dp))
+                    Modifier.padding(end = 5.dp).clickable{})
 
               }
           }
